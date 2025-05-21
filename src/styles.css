@@ -1,0 +1,22 @@
+.intro-table{
+    margin-left: 1%;
+}
+body{
+    background-color: rgb(251, 243, 218);
+}
+.current-table{
+    margin-top: 2%;
+}
+/*
+.about{
+    font-size: 90%;
+    margin-left: 10%;
+    margin-bottom: 50px;
+}
+*/
+a{
+    color: rgb(145, 205, 253);
+}
+a:hover{
+    color: rgb(43, 158, 253);
+}
