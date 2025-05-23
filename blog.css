@@ -6,3 +6,18 @@ body{
     background-color: rgb(248, 239, 210);
 }
 
+.left_riemmann{
+    text-align: center;
+    margin: 20px, 0;
+}
+pre 
+{
+    background-color: #f4f4f4; /* Light gray background */
+    border: 1px solid #ccc;    /* Border around the code block */
+    padding: 5px;              /* Padding inside the code block */
+    margin: 5px ;            /* Margin around the code block */
+    overflow: auto;            /* Scroll if the code is too long */
+    border-radius: 4px;       /* Optional: rounded corners */
+    font-family: monospace;    /* Use a monospace font for code */
+}
+

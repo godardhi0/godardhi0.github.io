@@ -5,13 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <link rel="stylesheet" href="blog.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" ></script>
 </head>
 <body>
     <div class="content">
         <ul>
             <li>
-                <h4>23 May 00:53</h4>
-                <p>SO QUIET HERE</p>
+                <h4>23 May 12:24 PM</h4>
+                <p>
+                    Integration is one of many beautiful operations in math.<br> So i have written a C code that calculates the defined integral of linear and polynomial functions. Its not the most efficient but it's a start.<br>
+                    <br>
+                    <strong>Definition</strong>: Suppose \(\mathcal{f}\) is continuous. A left Riemann sum of \(\mathcal{f}\) of order \( \mathcal{n}\) on an interval [a, b] is number given by :<br>
+                
+                    <div class="left_riemmann">
+                        <p>
+                            \(S_n (\mathcal{f}[a,b]) := \frac{b-a}{n} \sum_{k=0}^{n-1}\mathcal{f}(a+\frac{k}{n}(b-a))\).
+                        </p>
+                        <p>The right sum is obtained by summing \( \mathcal{k} \) from 1 to \( \mathcal{n}\).</p>
+                    </div>
+
+                    <p> 
+                        The Riemann sum defined above is the integral of a step function equal to \( \mathcal{f}(x_{k-1,n}) \) (resp. \( \mathcal{f}(x_{k,n}) \) for the right Riemann sum)<br>
+                        over every interval ]\( x_{k-1,n},x_{k,n}\)[ with \( x_{k,n}:= a+k\frac{b-a}{n}\) for \( \mathcal{k \in}\) [0,n].<br>
+                    </p>
+                    So for every continous function \(\mathcal{f}\) on [a, b] the sequence \( S_n(\mathcal{f}[a, b])\) converges to the integral of \(\mathcal{f}\) on [a, b]. So as \( n \) get larger \( S_n\) gets close the exact integral of \(\mathcal{f}\) over [a, b].
+                    <br>
+                    <strong>code</strong>:
+                        <pre>
+                            <code>
+                                for i=1 to n do
+                                    x <- a + i(b-a)/n
+                                    right_sum <- right_sum + (b-a)/n*f(x)                                     
+                                END for
+                                    RETURN right_sum
+                            </code>
+                        </pre>
+                </p>
             </li>
         </ul>
 
