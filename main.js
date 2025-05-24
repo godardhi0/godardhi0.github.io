@@ -1,6 +1,6 @@
 function displayLastUpdatedDateTime() {
     // Set the last updated date here
-    const lastUpdated = new Date('2025-05-20T21:22:00'); // Change this date to your last update date
+    const lastUpdated = new Date('2025-05-24T23:53:00'); // Change this date to your last update date
     const options = { 
         day: '2-digit', 
         month: '2-digit', 
@@ -11,7 +11,7 @@ function displayLastUpdatedDateTime() {
         hour12: false 
     };
     const formattedDate = lastUpdated.toLocaleString('fr-FR', options); // Format the date and time in French (EURO format)
-    document.getElementById('dateTime').innerText = `Dernière mise à jour : ${formattedDate}`; // Display it in the paragraph
+    document.getElementById('dateTime0').innerText = `Dernière mise à jour : ${formattedDate}`; // Display it in the paragraph
 }
 
 window.onload = displayLastUpdatedDateTime;

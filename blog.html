@@ -13,9 +13,9 @@
     <div class="content">
         <ul>
             <li>
-                <h4 id="dateTime"></h4>
+                <h4 id="dateTime0"></h4>
                 <p>
-                    Integration is one of many beautiful operations in math.<br> So i have written a C code that calculates the defined integral of linear and polynomial functions. Its not the most efficient but it's a start.<br>
+                    Integration is one of many beautiful operations in math.<br> So i wrote a C code that calculates the defined integral of linear and polynomial functions. Its not the most efficient but it's a start.<br>
                     <br>
                     <strong>Definition</strong>: Suppose \(\mathcal{f}\) is continuous. A left Riemann sum of \(\mathcal{f}\) of order \( \mathcal{n}\) on an interval [a, b] is number given by :<br>
                 
@@ -42,6 +42,19 @@
                                     RETURN right_sum
                             </code>
                         </pre>
+                        Now the next task it to express \(\mathcal{f}\) in code. Two of the most common types of functions are linear and non-linear functions.<br>
+                        A linear maping is just a function <strong>Double</strong>\(\mathcal{\_linear}\)(const double slope, double x, const double b) that returns a number \(\mathcal{y}\) such that \(\mathcal{y}=slope*x + b\)<br>
+                        A polynomial is a type of non-linear function. Polynomials are defined as sums of products :  <br>
+                        <div class="left_riemmann">
+                            <p>
+                                \(\sum_{i=0}^{N}\mathcal{a_{i}X^{i}}\).
+                            </p>
+                        </div>
+
+                        where \(\mathcal{X}\) is the varaible and \(\mathcal{a_{i}}\) is ith coeficient. So the expression of a polynomial function in code could be <strong>Double</strong> \(\mathcal{\_poly}\)(const double *coef_degre, double variable, const int coef_degre_size). <br>
+                        If \(\mathcal{y}\) is the number returned by \(\mathcal{\_poly}\) then \(\mathcal{y}\) should be obtained with some sort of loop that adds all the terms of the polynomial. 
+                        <br><br>
+                        Riemanns' integration is visual which makes it very intuitive. 
                 </p>
             </li>
         </ul>
